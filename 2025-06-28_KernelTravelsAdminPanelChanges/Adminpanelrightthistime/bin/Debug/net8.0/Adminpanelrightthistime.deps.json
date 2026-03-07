@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Adminpanelrightthistime/1.0.0": {
+        "runtime": {
+          "Adminpanelrightthistime.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Adminpanelrightthistime/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
