@@ -1,0 +1,212 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\views\\home\\table.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\views\\home\\table.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\views\\home\\pagesprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\views\\home\\pagesprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\views\\home\\pages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\views\\home\\pages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\views\\home\\mapgoogle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\views\\home\\mapgoogle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\views\\home\\fontawesome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\views\\home\\fontawesome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\views\\home\\pageserror.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\views\\home\\pageserror.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|c:\\users\\gaming\\source\\repos\\eproject others work\\adminoanel\\adminoanel\\adminoanel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA8B38B8-213D-4F6D-893E-1564D01D1168}|adminoanel\\adminoanel.csproj|solutionrelative:adminoanel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "table.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\table.cshtml",
+              "RelativeDocumentMoniker": "adminoanel\\Views\\Home\\table.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\table.cshtml*",
+              "RelativeToolTip": "adminoanel\\Views\\Home\\table.cshtml*",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAjwA8BAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T11:25:18.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "pageserror.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\pageserror.cshtml",
+              "RelativeDocumentMoniker": "adminoanel\\Views\\Home\\pageserror.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\pageserror.cshtml*",
+              "RelativeToolTip": "adminoanel\\Views\\Home\\pageserror.cshtml*",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwEMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T11:23:49.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pagesprofile.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\pagesprofile.cshtml",
+              "RelativeDocumentMoniker": "adminoanel\\Views\\Home\\pagesprofile.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\pagesprofile.cshtml*",
+              "RelativeToolTip": "adminoanel\\Views\\Home\\pagesprofile.cshtml*",
+              "ViewState": "AgIAANcAAAAAAAAAAADwvzMBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T11:22:13.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "pages.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\pages.cshtml",
+              "RelativeDocumentMoniker": "adminoanel\\Views\\Home\\pages.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\pages.cshtml*",
+              "RelativeToolTip": "adminoanel\\Views\\Home\\pages.cshtml*",
+              "ViewState": "AgIAAMQAAAAAAAAAAADwv9sAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T11:15:44.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "mapgoogle.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\mapgoogle.cshtml",
+              "RelativeDocumentMoniker": "adminoanel\\Views\\Home\\mapgoogle.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\mapgoogle.cshtml*",
+              "RelativeToolTip": "adminoanel\\Views\\Home\\mapgoogle.cshtml*",
+              "ViewState": "AgIAAAICAAAAAAAAAAAjwCECAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T11:14:38.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "adminoanel\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "adminoanel\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:07:10.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "adminoanel\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "adminoanel\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAAEIBAAAAAAAAAAAjwFsBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T11:10:24.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "fontawesome.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\fontawesome.cshtml",
+              "RelativeDocumentMoniker": "adminoanel\\Views\\Home\\fontawesome.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Home\\fontawesome.cshtml*",
+              "RelativeToolTip": "adminoanel\\Views\\Home\\fontawesome.cshtml*",
+              "ViewState": "AgIAACkTAAAAAAAAAACgPTETAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T11:13:54.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "adminoanel\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "adminoanel\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T11:04:09.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Program.cs",
+              "RelativeDocumentMoniker": "adminoanel\\Program.cs",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\Program.cs",
+              "RelativeToolTip": "adminoanel\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:04:00.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\appsettings.json",
+              "RelativeDocumentMoniker": "adminoanel\\appsettings.json",
+              "ToolTip": "C:\\Users\\GAMING\\source\\repos\\Eproject others work\\adminoanel\\adminoanel\\adminoanel\\appsettings.json",
+              "RelativeToolTip": "adminoanel\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-25T11:03:51.27Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

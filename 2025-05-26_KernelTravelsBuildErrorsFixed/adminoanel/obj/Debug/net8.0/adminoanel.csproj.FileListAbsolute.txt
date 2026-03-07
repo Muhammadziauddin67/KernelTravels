@@ -1,0 +1,36 @@
+C:\Users\HP\source\repos\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.AssemblyInfo.cs
+C:\Users\HP\source\repos\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HP\source\repos\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.RazorAssemblyInfo.cache
+C:\Users\HP\source\repos\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.RazorAssemblyInfo.cs
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.AssemblyInfoInputs.cache
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.AssemblyInfo.cs
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.csproj.CoreCompileInputs.cache
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.RazorAssemblyInfo.cache
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.RazorAssemblyInfo.cs
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\bin\Debug\net8.0\appsettings.json
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\bin\Debug\net8.0\adminoanel.staticwebassets.runtime.json
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\bin\Debug\net8.0\adminoanel.staticwebassets.endpoints.json
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\bin\Debug\net8.0\adminoanel.exe
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\bin\Debug\net8.0\adminoanel.deps.json
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\bin\Debug\net8.0\adminoanel.runtimeconfig.json
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\bin\Debug\net8.0\adminoanel.dll
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\bin\Debug\net8.0\adminoanel.pdb
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\scopedcss\bundle\adminoanel.styles.css
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\scopedcss\projectbundle\adminoanel.bundle.scp.css
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.dll
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\refint\adminoanel.dll
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.pdb
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\adminoanel.genruntimeconfig.cache
+C:\Users\GAMING\source\repos\Eproject others work\adminoanel\adminoanel\adminoanel\obj\Debug\net8.0\ref\adminoanel.dll
