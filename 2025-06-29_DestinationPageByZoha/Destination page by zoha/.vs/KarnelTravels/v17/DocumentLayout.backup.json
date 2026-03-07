@@ -1,0 +1,336 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.RazorAssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.RazorAssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KarnelTravels\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\home\\tourismspots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\home\\tourismspots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\home\\destination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\home\\destination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\home\\hotel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\home\\hotel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|c:\\users\\gaming\\downloads\\travel\\travel\\karneltravels\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2739D6EE-BC73-4147-8654-1350E5892F24}|KarnelTravels\\KarnelTravels.csproj|solutionrelative:karneltravels\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 318,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KarnelTravels.RazorAssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.RazorAssemblyInfo.cs",
+              "RelativeDocumentMoniker": "KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.RazorAssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.RazorAssemblyInfo.cs",
+              "RelativeToolTip": "KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.RazorAssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T13:55:06.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KarnelTravels.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.AssemblyInfo.cs",
+              "RelativeToolTip": "KarnelTravels\\obj\\Debug\\net8.0\\KarnelTravels.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T13:55:03.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "KarnelTravels\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "KarnelTravels\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T13:55:01.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "KarnelTravels\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "KarnelTravels\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T13:54:59.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "tourismspots.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\tourismspots.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\Home\\tourismspots.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\tourismspots.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\Home\\tourismspots.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T12:59:46.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "KarnelTravels\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "KarnelTravels\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T14:54:50.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAcwC8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T14:56:09.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAswAIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T16:16:07.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T18:30:15.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T18:30:08.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T18:30:20.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Program.cs",
+              "RelativeDocumentMoniker": "KarnelTravels\\Program.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Program.cs",
+              "RelativeToolTip": "KarnelTravels\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T16:04:34.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\appsettings.json",
+              "RelativeDocumentMoniker": "KarnelTravels\\appsettings.json",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\appsettings.json",
+              "RelativeToolTip": "KarnelTravels\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-16T16:04:33.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Destination.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\Destination.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\Home\\Destination.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\Destination.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\Home\\Destination.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T16:18:47.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T18:30:17.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T16:23:30.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Blog.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\Blog.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\Home\\Blog.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\Blog.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\Home\\Blog.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T16:20:02.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Hotel.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\Hotel.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\Home\\Hotel.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\Hotel.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\Home\\Hotel.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGcAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T16:07:54.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "KarnelTravels\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\GAMING\\Downloads\\travel\\travel\\KarnelTravels\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "KarnelTravels\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAFoCAAAAAAAAAAAmwJgCAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T15:01:04.123Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
