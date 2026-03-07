@@ -1,0 +1,68 @@
+﻿@model KarnelTravels.Models.Restaurant
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    @if (!string.IsNullOrEmpty(Model.ImagePath))
+    {
+        <div>
+            <strong>Image:</strong>
+            <img src="~/assets/images/@Model.ImagePath" alt="Restaurant Image" width="200" height="200" />
+
+        </div>
+    }
+    else
+    {
+        <p>No Image Available</p>
+    }
+
+    <h4>Restaurant</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ImagePath)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ImagePath)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Day)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Day)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.yearmonth)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.yearmonth)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RestaurantLink)
+        </dt>
+        <dd class = "col-sm-10">
+            <a href="@Model.RestaurantLink" target="_blank">@Model.RestaurantLink</a>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.RestaurantId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

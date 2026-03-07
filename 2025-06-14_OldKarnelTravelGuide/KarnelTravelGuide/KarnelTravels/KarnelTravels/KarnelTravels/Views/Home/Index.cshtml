@@ -1,0 +1,674 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="hero-wrap js-fullheight" style="background-image: url('/assets/images/bg_5.jpg');">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+			<div class="col-md-7 ftco-animate">
+				<span class="subheading">Welcome to Karnel</span>
+				<h1 class="mb-4">Discover Your Favorite Place with Us</h1>
+				<p class="caps">Travel to the any corner of the world, without going around in circles</p>
+			</div>
+			<a href="https://www.youtube.com/watch?v=GJCOoEnNxTA" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+				<span class="fa fa-play"></span>
+			</a>
+		</div>
+	</div>
+</div>
+
+<section class="ftco-section ftco-no-pb ftco-no-pt">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="ftco-search d-flex justify-content-center">
+					<div class="row">
+						<div class="col-md-12 nav-link-wrap">
+							<div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="~assets/#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Destination</a>
+
+								<a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="~assets/#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Hotel</a>
+
+							</div>
+						</div>
+						<div class="col-md-12 tab-wrap">
+
+							<div class="tab-content" id="v-pills-tabContent">
+
+								<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+									<form action="/Home/Destination" method="get" class="search-property-1">
+										<div class="row no-gutters">
+											<div class="col-lg d-flex">
+												<div class="form-group p-4 border-0">
+													<label>Destination</label>
+													<div class="form-field">
+														<div class="icon"><span class="fa fa-search"></span></div>
+														<input type="text" name="destinationName" class="form-control" placeholder="Search place">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg d-flex">
+												<div class="form-group p-4">
+													<label for="location">location</label>
+													<input type="text" name="location" class="form-control" placeholder="location">
+												</div>
+											</div>
+											<div class="col-lg d-flex">
+												<div class="form-group p-4">
+													<label for="Days">Days</label>
+													<input type="text" name="days" class="form-control" placeholder="days">
+												</div>
+											</div>
+											<div class="col-lg d-flex">
+												<div class="form-group p-4">
+													<label>Max Price Limit</label>
+													<div class="form-field">
+														<div class="select-wrap">
+															<div class="icon"><span class="fa fa-chevron-down"></span></div>
+															<select name="maxPrice" class="form-control">
+																<option value="">No limit</option>
+																<option value="200">$200</option>
+																<option value="500">$500</option>
+																<option value="1000">$1,000</option>
+																<option value="3000">$3,000</option>
+																<option value="5000">$5,000</option>
+																<option value="10000">$10,000</option>
+																<option value="50000">$50,000</option>
+																<option value="100000">$100,000</option>
+																<option value="200000">$200,000</option>
+																<option value="300000">$300,000</option>
+																<option value="400000">$400,000</option>
+																<option value="500000">$500,000</option>
+																<option value="1000000">$1,000,000</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg d-flex">
+												<div class="form-group d-flex w-100 border-0">
+													<div class="form-field w-100 align-items-center d-flex">
+														<input type="submit" value="Search" class="align-self-stretch form-control btn btn-primary">
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
+									<form action="/Home/Hotel" method="get" class="search-property-1">
+										<div class="row no-gutters">
+											<!-- Destination -->
+											<div class="col-lg d-flex">
+												<div class="form-group p-4 border-0">
+													<label>Destination</label>
+													<div class="form-field">
+														<div class="icon"><span class="fa fa-search"></span></div>
+														<input type="text" name="destination" class="form-control" placeholder="Search place">
+													</div>
+												</div>
+											</div>
+											<!-- Hotel Name -->
+											<div class="col-lg d-flex">
+												<div class="form-group p-4">
+													<label>Hotel Name</label>
+													<input type="text" name="hotelName" class="form-control" placeholder="e.g. Grand Palace">
+												</div>
+											</div>
+
+											<!-- Min Rating -->
+											<div class="col-lg d-flex">
+												<div class="form-group p-4">
+													<label>Minimum Rating</label>
+													<input type="number" step="0.1" min="0" max="5" name="minRating" class="form-control" placeholder="e.g. 4.5">
+												</div>
+											</div>
+
+											<!-- Days -->
+											<div class="col-lg d-flex">
+												<div class="form-group p-4">
+													<label>Days</label>
+													<input type="text" name="days" class="form-control" placeholder="e.g. 3 days 2 nights">
+												</div>
+											</div>
+											<!-- Max Price -->
+											<div class="col-lg d-flex">
+												<div class="form-group p-4">
+													<label>Price Limit</label>
+													<div class="form-field">
+														<div class="select-wrap">
+															<div class="icon"><span class="fa fa-chevron-down"></span></div>
+															<select name="maxPrice" class="form-control">
+																<option value="">No Limit</option>
+																<option value="5000">$5,000</option>
+																<option value="10000">$10,000</option>
+																<option value="50000">$50,000</option>
+																<option value="100000">$100,000</option>
+																<option value="200000">$200,000</option>
+																<option value="300000">$300,000</option>
+																<option value="400000">$400,000</option>
+																<option value="500000">$500,000</option>
+																<option value="1000000">$1,000,000</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Submit -->
+											<div class="col-lg d-flex">
+												<div class="form-group d-flex w-100 border-0">
+													<div class="form-field w-100 align-items-center d-flex">
+														<input type="submit" value="Search" class="align-self-stretch form-control btn btn-primary">
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section services-section">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
+				<div class="w-100">
+					<span class="subheading">Welcome to Karnel</span>
+					<h2 class="mb-4">It's time to start your adventure</h2>
+					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+					<p>
+						Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+						A small river named Duden flows by their place and supplies it with the necessary regelialia.
+					</p>
+					<p><a asp-controller="Home" asp-action="Search" class="btn btn-primary py-3 px-4">Search Destination</a></p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+						<div class="services services-1 color-1 d-block img" style="background-image: url(/assets/images/services-1.jpg);">
+							<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-paragliding"></span></div>
+							<div class="media-body">
+								<h3 class="heading mb-3">Activities</h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+						<div class="services services-1 color-2 d-block img" style="background-image: url(/assets/images/services-2.jpg);">
+							<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+							<div class="media-body">
+								<h3 class="heading mb-3">Travel Arrangements</h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+						<div class="services services-1 color-3 d-block img" style="background-image: url(/assets/images/services-3.jpg);">
+							<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tour-guide"></span></div>
+							<div class="media-body">
+								<h3 class="heading mb-3">Private Guide</h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+						<div class="services services-1 color-4 d-block img" style="background-image: url(/assets/images/services-4.jpg);">
+							<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-map"></span></div>
+							<div class="media-body">
+								<h3 class="heading mb-3">Location Manager</h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section img ftco-select-destination" style="background-image: url(/assets/images/bg_3.jpg);">
+	<div class="container">
+		<div class="row justify-content-center pb-4">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+				<span class="subheading">Karnel Provide Places</span>
+				<h2 class="mb-4">Select Your Destination</h2>
+			</div>
+		</div>
+	</div>
+	<div class="container container-2">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="carousel-destination owl-carousel ftco-animate">
+					<div class="item">
+						<div class="project-destination">
+							<a href="https://premiotravels.com/philippine-holiday-travel-and-tour-packages/" class="img" style="background-image: url(/assets/images/place-1.jpg);">
+								<div class="text">
+									<h3>Philippines</h3>
+									<span>8 Tours</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="project-destination">
+							<a href="https://www.tourradar.com/d/canada?srsltid=AfmBOoo54czLr_IpL7FKHhuIE1BzrKmECQziymHFFuLFoFlOpAbig_cQ" class="img" style="background-image: url(/assets/images/place-2.jpg);">
+								<div class="text">
+									<h3>Canada</h3>
+									<span>2 Tours</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="project-destination">
+							<a href="https://www.trips.pk/tours/thailand" class="img" style="background-image: url(/assets/images/place-3.jpg);">
+								<div class="text">
+									<h3>Thailand</h3>
+									<span>5 Tours</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="project-destination">
+							<a href="https://www.adventureboundtours.com.au/?gad_source=1&gad_campaignid=21853041339&gbraid=0AAAAADixP5hz9uXl7tJvK6wYUpZD2hF14&gclid=CjwKCAjw9anCBhAWEiwAqBJ-c8FLufdP63zpIOT0-0NdCOmpnsZ1TGdXNHDdnF02o3x42eD-5u8NeBoC_RkQAvD_BwE" class="img" style="background-image: url(/assets/images/place-4.jpg);">
+								<div class="text">
+									<h3>Autralia</h3>
+									<span>5 Tours</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="project-destination">
+							<a href="https://www.trips.pk/tours/greece" class="img" style="background-image: url(/assets/images/place-5.jpg);">
+								<div class="text">
+									<h3>Greece</h3>
+									<span>7 Tours</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center pb-4">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+				<span class="subheading">Destination</span>
+				<h2 class="mb-4">Tour Destination</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 ftco-animate">
+				<div class="project-wrap">
+					<a href="https://g.co/kgs/t2ox72A" class="img" style="background-image: url(/assets/images/destination-1.jpg);">
+						<span class="price">$550/person</span>
+					</a>
+					<div class="text p-4">
+						<span class="days">8 Days Tour</span>
+						<h3><a href="https://g.co/kgs/t2ox72A">Banaue Rice Terraces</a></h3>
+						<p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
+						<ul>
+							<li><span class="flaticon-shower"></span>2</li>
+							<li><span class="flaticon-king-size"></span>3</li>
+							<li><span class="flaticon-mountains"></span>Near Mountain</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 ftco-animate">
+				<div class="project-wrap">
+					<a href="https://www.anantara.com/en/double-12" class="img" style="background-image: url(/assets/images/destination-2.jpg);">
+						<span class="price">$1200/person</span>
+					</a>
+					<div class="text p-4">
+						<span class="days">7 Days Tour</span>
+						<h3><a href="https://www.anantara.com/en/double-12">Maldives Escape</a></h3>
+						<p class="location"><span class="fa fa-map-marker"></span> Male, Maldives</p>
+						<ul>
+							<li><span class="flaticon-shower"></span>1</li>
+							<li><span class="flaticon-king-size"></span>2</li>
+							<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 ftco-animate">
+				<div class="project-wrap">
+					<a href="https://www.contexttravel.com/cities/tokyo?campaignid=22427143382&adgroupid=175619230697&adid=745105410210&utm_campaign=NB_Search_All+Cities_2025_CA/UK/AU&utm_source=google&utm_medium=cpc&utm_term=tokyo%20day%20tours&utm_content=745105410210&hsa_acc=2543526726&hsa_cam=22427143382&hsa_grp=175619230697&hsa_ad=745105410210&hsa_src=g&hsa_tgt=kwd-295367453027&hsa_kw=tokyo%20day%20tours&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22427143382&gbraid=0AAAAADmuEGgdel58brFzPr99X7wmoLXLG&gclid=CjwKCAjw9anCBhAWEiwAqBJ-c25QYG_MtiV-qarznKjv_RX5kNRBkxRasJ_jw-InfJl175cVWRaJ-xoC59AQAvD_BwE" class="img" style="background-image: url(/assets/images/destination-3.jpg);">
+						<span class="price">$950/person</span>
+					</a>
+					<div class="text p-4">
+						<span class="days">10 Days Tour</span>
+						<h3><a href="https://www.contexttravel.com/cities/tokyo?campaignid=22427143382&adgroupid=175619230697&adid=745105410210&utm_campaign=NB_Search_All+Cities_2025_CA/UK/AU&utm_source=google&utm_medium=cpc&utm_term=tokyo%20day%20tours&utm_content=745105410210&hsa_acc=2543526726&hsa_cam=22427143382&hsa_grp=175619230697&hsa_ad=745105410210&hsa_src=g&hsa_tgt=kwd-295367453027&hsa_kw=tokyo%20day%20tours&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22427143382&gbraid=0AAAAADmuEGgdel58brFzPr99X7wmoLXLG&gclid=CjwKCAjw9anCBhAWEiwAqBJ-c25QYG_MtiV-qarznKjv_RX5kNRBkxRasJ_jw-InfJl175cVWRaJ-xoC59AQAvD_BwE">Tokyo & Kyoto Wonders</a></h3>
+						<p class="location"><span class="fa fa-map-marker"></span> Tokyo & Kyoto, Japan</p>
+						<ul>
+							<li><span class="flaticon-shower"></span>3</li>
+							<li><span class="flaticon-king-size"></span>4</li>
+							<li><span class="flaticon-sun-umbrella"></span>Near Markets</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 ftco-animate">
+				<div class="project-wrap">
+					<a href="https://www.expedia.com/Hotel-Search?regionId=6346431&locale=en_US&siteid=1&semcid=US.UB.GOOGLE.LM-c-EN.HOTEL&semdtl=a114081204621.b1131005970331.g1kwd-1001509891.e1c.m1CjwKCAjw9anCBhAWEiwAqBJ-c0VjopSQ5HQixsnJr6gq8Vvcc9Xwry_1I1MxAJ2T6Nh5PfyIayQ1lRoC45EQAvD_BwE.r1.c1.j19077129.k1.d1720068049274.h1b.i1.l1.n1.o1.p1.q1.s1.t1.x1.f1.u1.v1.w1&gad_source=1&gad_campaignid=14081204621&gbraid=0AAAAACTxZ9YouMEwFj-d5R4SgCnDdJ6lI&gclid=CjwKCAjw9anCBhAWEiwAqBJ-c0VjopSQ5HQixsnJr6gq8Vvcc9Xwry_1I1MxAJ2T6Nh5PfyIayQ1lRoC45EQAvD_BwE&startDate=2025-06-26&endDate=2025-06-27&destination=Plitvice%20Lakes%20National%20Park%2C%20Plitvicka%20Jezera%2C%20Lika-Senj%2C%20Croatia&isInvalidatedDate=false&upsellingNumNightsAdded=&theme=&userIntent=&upsellingDiscountTypeAdded=&categorySearch=&useRewards=false&sort=RECOMMENDED" class="img" style="background-image: url(/assets/images/destination-4.jpg);">
+						<span class="price">$780/person</span>
+					</a>
+					<div class="text p-4">
+						<span class="days">6 Days Tour</span>
+						<h3><a href="https://www.expedia.com/Hotel-Search?regionId=6346431&locale=en_US&siteid=1&semcid=US.UB.GOOGLE.LM-c-EN.HOTEL&semdtl=a114081204621.b1131005970331.g1kwd-1001509891.e1c.m1CjwKCAjw9anCBhAWEiwAqBJ-c0VjopSQ5HQixsnJr6gq8Vvcc9Xwry_1I1MxAJ2T6Nh5PfyIayQ1lRoC45EQAvD_BwE.r1.c1.j19077129.k1.d1720068049274.h1b.i1.l1.n1.o1.p1.q1.s1.t1.x1.f1.u1.v1.w1&gad_source=1&gad_campaignid=14081204621&gbraid=0AAAAACTxZ9YouMEwFj-d5R4SgCnDdJ6lI&gclid=CjwKCAjw9anCBhAWEiwAqBJ-c0VjopSQ5HQixsnJr6gq8Vvcc9Xwry_1I1MxAJ2T6Nh5PfyIayQ1lRoC45EQAvD_BwE&startDate=2025-06-26&endDate=2025-06-27&destination=Plitvice%20Lakes%20National%20Park%2C%20Plitvicka%20Jezera%2C%20Lika-Senj%2C%20Croatia&isInvalidatedDate=false&upsellingNumNightsAdded=&theme=&userIntent=&upsellingDiscountTypeAdded=&categorySearch=&useRewards=false&sort=RECOMMENDED">Waterfall Mountain Retreat</a></h3>
+						<p class="location"><span class="fa fa-map-marker"></span> Plitvice Lakes, Croatia</p>
+						<ul>
+							<li><span class="flaticon-shower"></span>2</li>
+							<li><span class="flaticon-king-size"></span>5</li>
+							<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 ftco-animate">
+				<div class="project-wrap">
+					<a href="https://www.booking.com/resorts/region/th/phuket.en-gb.html?aid=376614&label=phuket-StSY1PTZoXLgkhvvjxv1jAS388162125495%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-351133714047%3Alp9077129%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YdK51rZczkDIdTwCMKOeDj8&gclid=CjwKCAjw9anCBhAWEiwAqBJ-c6Pah5RHFG47ei435eTDdn6nsa3aSyF-XauXe7A8rD9yCequFYiD-RoChf4QAvD_BwE&keep_landing=1&sid=0be53bd373315bb33866a3cbbe416ad6" class="img" style="background-image: url(/assets/images/destination-5.jpg);">
+						<span class="price">$880/person</span>
+					</a>
+					<div class="text p-4">
+						<span class="days">9 Days Tour</span>
+						<h3><a href="https://www.booking.com/resorts/region/th/phuket.en-gb.html?aid=376614&label=phuket-StSY1PTZoXLgkhvvjxv1jAS388162125495%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-351133714047%3Alp9077129%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YdK51rZczkDIdTwCMKOeDj8&gclid=CjwKCAjw9anCBhAWEiwAqBJ-c6Pah5RHFG47ei435eTDdn6nsa3aSyF-XauXe7A8rD9yCequFYiD-RoChf4QAvD_BwE&keep_landing=1&sid=0be53bd373315bb33866a3cbbe416ad6">Phuket Adventure</a></h3>
+						<p class="location"><span class="fa fa-map-marker"></span> Phuket, Thailand</p>
+						<ul>
+							<li><span class="flaticon-shower"></span>3</li>
+							<li><span class="flaticon-king-size"></span>5</li>
+							<li><span class="flaticon-sun-umbrella"></span>Near Markets</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 ftco-animate">
+				<div class="project-wrap">
+					<a href="https://www.re.is/" class="img" style="background-image: url(/assets/images/destination-6.jpg);">
+						<span class="price">$1100/person</span>
+					</a>
+					<div class="text p-4">
+						<span class="days">8 Days Tour</span>
+						<h3><a href="https://www.re.is/">Iceland Isles Exploration</a></h3>
+						<p class="location"><span class="fa fa-map-marker"></span> Vestmannaeyjar, Iceland</p>
+						<ul>
+							<li><span class="flaticon-shower"></span>6</li>
+							<li><span class="flaticon-king-size"></span>2</li>
+							<li><span class="flaticon-mountains"></span>Near Mountain</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section ftco-about img" style="background-image: url(/assets/images/bg_4.jpg);">
+	<div class="overlay"></div>
+	<div class="container py-md-5">
+		<div class="row py-md-5">
+			<div class="col-md d-flex align-items-center justify-content-center">
+				<a href="https://www.youtube.com/watch?v=GJCOoEnNxTA" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+					<span class="fa fa-play"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section ftco-about ftco-no-pt img">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-md-12 about-intro">
+				<div class="row">
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div class="img d-flex w-100 align-items-center justify-content-center" style="background-image:url(/assets/images/about-1.jpg);">
+						</div>
+					</div>
+					<div class="col-md-6 pl-md-5 py-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<span class="subheading">About Us</span>
+								<h2 class="mb-4">Make Your Tour Memorable and Safe With Us</h2>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p><a asp-controller="Home" asp-action="Destination" class="nav-link" class="btn btn-primary">Book Your Destination</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section testimony-section bg-bottom" style="background-image: url(/assets/images/bg_1.jpg);">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row justify-content-center pb-4">
+			<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+				<span class="subheading">Testimonial</span>
+				<h2 class="mb-4">Tourist Feedback</h2>
+			</div>
+		</div>
+		<div class="row ftco-animate">
+			<div class="col-md-12">
+				<div class="carousel-testimony owl-carousel">
+					<div class="item">
+						<div class="testimony-wrap py-4">
+							<div class="text">
+								<p class="star">
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</p>
+								<p class="mb-4">Thanks to KarnelTravels, I discovered hidden gems I never knew existed. From the serene valleys of Consonantia to the peaceful beaches of Vokalia, every destination was like a page from a fairytale. Highly recommended!</p>
+								<div class="d-flex align-items-center">
+									<div class="user-img" style="background-image: url(/assets/images/person_1.jpg)"></div>
+									<div class="pl-3">
+										<p class="name">Roger Scott</p>
+										<span class="position">Germany</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimony-wrap py-4">
+							<div class="text">
+								<p class="star">
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</p>
+								<p class="mb-4">Far far away, beyond my busy city life, KarnelTravels guided me to a quiet village in the Word Mountains. The experience was surreal — as if the blind texts had finally found their voice. The site is easy to use and beautifully curated</p>
+								<div class="d-flex align-items-center">
+									<div class="user-img" style="background-image: url(/assets/images/person_2.jpg)"></div>
+									<div class="pl-3">
+										<p class="name">Smith Scott</p>
+										<span class="position">America</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimony-wrap py-4">
+							<div class="text">
+								<p class="star">
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</p>
+								<p class="mb-4">I used to think travel planning was stressful — until I found KarnelTravels. Their recommendations were spot-on and led me to charming spots off the beaten path. It's like having a storyteller and a guide in one place</p>
+								<div class="d-flex align-items-center">
+									<div class="user-img" style="background-image: url(/assets/images/person_3.jpg)"></div>
+									<div class="pl-3">
+										<p class="name">James</p>
+										<span class="position">America</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimony-wrap py-4">
+							<div class="text">
+								<p class="star">
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</p>
+								<p class="mb-4">Every time I read about faraway places in stories, I wondered if such places existed. KarnelTravels showed me they do. My solo trip to the Land of Blind Texts was unforgettable.</p>
+								<div class="d-flex align-items-center">
+									<div class="user-img" style="background-image: url(/assets/images/person_5.PNG)"></div>
+									<div class="pl-3">
+										<p class="name">Hassan R</p>
+										<span class="position">UAE</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimony-wrap py-4">
+							<div class="text">
+								<p class="star">
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</p>
+								<p class="mb-4">KarnelTravels helped me plan our honeymoon to a secluded mountain village. The views, the culture, the peace — it was everything we hoped for. If you want meaningful travel, this is the site.</p>
+								<div class="d-flex align-items-center">
+									<div class="user-img" style="background-image: url(/assets/images/person_6.PNG)"></div>
+									<div class="pl-3">
+										<p class="name">Lina T</p>
+										<span class="position">Germany</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center pb-4">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+				<span class="subheading">Our Blog</span>
+				<h2 class="mb-4">Recent Post</h2>
+			</div>
+		</div>
+		<div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<a href="https://www.buzzfeed.com/hannahloewentheil/underrated-alternative-travel-destinations-gd" class="block-20" style="background-image: url('/assets/images/image_1.jpg');">
+					</a>
+					<div class="text">
+						<div class="d-flex align-items-center mb-4 topp">
+							<div class="one">
+								<span class="day">11</span>
+							</div>
+							<div class="two">
+								<span class="yr">2020</span>
+								<span class="mos">September</span>
+							</div>
+						</div>
+						<h3 class="heading"><a href="https://www.buzzfeed.com/hannahloewentheil/underrated-alternative-travel-destinations-gd">27 Hidden Gems Around the World You’ll Want to Visit</a></h3>
+						<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+						<p><a href="https://www.buzzfeed.com/hannahloewentheil/underrated-alternative-travel-destinations-gd" class="btn btn-primary">Read more</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<a href="https://www.nationalgeographic.com/travel/article/overtourism-alternative-destinations-to-visit" class="block-20" style="background-image: url('/assets/images/image_2.jpg');">
+					</a>
+					<div class="text">
+						<div class="d-flex align-items-center mb-4 topp">
+							<div class="one">
+								<span class="day">11</span>
+							</div>
+							<div class="two">
+								<span class="yr">2020</span>
+								<span class="mos">September</span>
+							</div>
+						</div>
+						<h3 class="heading"><a href="https://www.nationalgeographic.com/travel/article/overtourism-alternative-destinations-to-visit">These Travel Dupes Help You Avoid the Crowds</a></h3>
+						<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+						<p><a href="https://www.nationalgeographic.com/travel/article/overtourism-alternative-destinations-to-visit" class="btn btn-primary">Read more</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+					<a href="https://www.adventureclues.com/articles/36-unknown-places-in-the-world-that-will-take-your-breath-away/" class="block-20" style="background-image: url('/assets/images/image_3.jpg');">
+					</a>
+					<div class="text">
+						<div class="d-flex align-items-center mb-4 topp">
+							<div class="one">
+								<span class="day">11</span>
+							</div>
+							<div class="two">
+								<span class="yr">2020</span>
+								<span class="mos">September</span>
+							</div>
+						</div>
+						<h3 class="heading">
+							<a href="https://www.adventureclues.com/articles/36-unknown-places-in-the-world-that-will-take-your-breath-away/"> 36 Unknown Places in The World That Will Take Your Breath Away</a>
+						</h3>
+						<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+						<p><a href="https://www.adventureclues.com/articles/36-unknown-places-in-the-world-that-will-take-your-breath-away/" class="btn btn-primary">Read more</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<br />
+<section class="ftco-intro ftco-section ftco-no-pt">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-12 text-center">
+				<div class="img" style="background-image: url(/assets/images/bg_2.jpg);">
+					<div class="overlay"></div>
+					<h2>We Are KarnelTravels A Travel Agency</h2>
+					<p>We can manage your dream building A small river named Duden flows by their place</p>
+					<p class="mb-0"><a asp-controller="Home" asp-action="Contact" class="nav-link" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
