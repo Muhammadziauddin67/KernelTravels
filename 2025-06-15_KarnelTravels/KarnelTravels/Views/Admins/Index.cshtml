@@ -1,0 +1,91 @@
+﻿@model IEnumerable<KarnelTravels.Models.Admin>
+
+@{
+    Layout = "_AdminLayout";
+}
+<section id="dashboard" class="section-content active">
+    <h2>Dashboard</h2>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <canvas id="musicChart" height="200"></canvas>
+        </div>
+        <div class="col-md-4 mb-4">
+            <canvas id="userGrowthChart" height="200"></canvas>
+        </div>
+        <div class="col-md-4 mb-4">
+            <canvas id="languageChart" height="200"></canvas>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <canvas id="bookingChart" height="200"></canvas>
+        </div>
+        <div class="col-md-4 mb-4">
+            <canvas id="seasonalChart" height="200"></canvas>
+        </div>
+        <div class="col-md-4 mb-4">
+            <canvas id="stayChart" height="200"></canvas>
+        </div>
+    </div>
+</section>
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedAt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AdminId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AdminId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AdminId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

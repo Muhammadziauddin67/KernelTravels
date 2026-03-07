@@ -1,0 +1,29 @@
+﻿@model IEnumerable<KarnelTravels.Models.Contact>
+@{
+    Layout = "_AdminLayout";
+}
+
+<h2>Contact Messages</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Subject</th>
+            <th>Message</th>
+            <th>Sent At</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var contact in Model)
+    {
+        <tr>
+            <td>@contact.Name</td>
+            <td>@contact.Email</td>
+            <td>@contact.Subject</td>
+            <td>@contact.Message</td>
+            <td>@contact.SentAt</td>
+        </tr>
+    }
+    </tbody>
+</table>
