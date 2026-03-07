@@ -1,0 +1,122 @@
+﻿@model KarnelTravels.Models.SearchViewModel
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<h2 class="mb-4">Search Results</h2>
+
+<!-- Destinations -->
+@if (Model.Destinations.Any())
+{
+    <h3>Destinations</h3>
+    <div class="row">
+        @foreach (var d in Model.Destinations)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="~/assets/images/@d.ImagePath" class="card-img-top" alt="@d.Name" style="height:200px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@d.Name</h5>
+                        <p class="card-text">
+                            <strong>Location:</strong> @d.Location<br />
+                            <strong>Days:</strong> @d.Days<br />
+                            <strong>Price:</strong> $@d.Price
+                        </p>
+                        @if (!string.IsNullOrEmpty(d.DestinationLink))
+                        {
+                            <a href="@d.DestinationLink" class="btn btn-primary btn-sm" target="_blank">View More</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<!-- Hotels -->
+@if (Model.Hotels.Any())
+{
+    <h3>Hotels</h3>
+    <div class="row">
+        @foreach (var h in Model.Hotels)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="~/assets/images/@h.ImagePath" class="card-img-top" alt="@h.Name" style="height:200px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@h.Name</h5>
+                        <p class="card-text">
+                            <strong>Location:</strong> @h.Location<br />
+                            <strong>Days:</strong> @h.Days<br />
+                            <strong>Price:</strong> $@h.Price<br />
+                            <strong>Rating:</strong> @h.Rating
+                        </p>
+                        @if (!string.IsNullOrEmpty(h.HotelLink))
+                        {
+                            <a href="@h.HotelLink" class="btn btn-primary btn-sm" target="_blank">Hotel Link</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<!-- Tourism -->
+@if (Model.Tourisms.Any())
+{
+    <h3>Tourism</h3>
+    <div class="row">
+        @foreach (var t in Model.Tourisms)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="~/assets/images/@t.ImagePath" class="card-img-top" alt="@t.Name" style="height:200px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@t.Name</h5>
+                        <p class="card-text">
+                            <strong>Location:</strong> @t.Location<br />
+                            <strong>Country:</strong> @t.Country<br />
+                            <strong>Days:</strong> @t.Days<br />
+                            <strong>Price:</strong> $@t.Price<br />
+                            <strong>Rating:</strong> @t.Rating
+                        </p>
+                        @if (!string.IsNullOrEmpty(t.TourismLink))
+                        {
+                            <a href="@t.TourismLink" class="btn btn-primary btn-sm" target="_blank">Tourism Link</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<!-- Restaurants -->
+@if (Model.Restaurants.Any())
+{
+    <h3>Restaurants</h3>
+    <div class="row">
+        @foreach (var r in Model.Restaurants)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="~/assets/images/@r.ImagePath" class="card-img-top" alt="@r.Name" style="height:200px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@r.Name</h5>
+                        <p class="card-text">
+                            <strong>Description:</strong> @r.Description<br />
+                            <strong>Day:</strong> @r.Day<br />
+                            <strong>Year/Month:</strong> @r.yearmonth
+                        </p>
+                        @if (!string.IsNullOrEmpty(r.RestaurantLink))
+                        {
+                            <a href="@r.RestaurantLink" class="btn btn-primary btn-sm" target="_blank">Restaurant Link</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

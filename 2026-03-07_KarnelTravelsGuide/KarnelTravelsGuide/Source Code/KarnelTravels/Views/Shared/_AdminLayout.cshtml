@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Admin Panel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .admin-container {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 280px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
+        }
+
+            .sidebar.collapsed {
+                transform: translateX(-100%);
+            }
+
+        .sidebar-header {
+            padding: 2rem 1.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            text-align: center;
+        }
+
+            .sidebar-header h2 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .sidebar-header p {
+                font-size: 0.9rem;
+                opacity: 0.9;
+            }
+
+        .sidebar-nav {
+            padding: 1rem 0;
+        }
+
+        .nav-item {
+            margin: 0.25rem 1rem;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.25rem;
+            color: #374151;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .nav-link::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+                transition: left 0.5s;
+            }
+
+            .nav-link:hover::before {
+                left: 100%;
+            }
+
+            .nav-link:hover {
+                background: linear-gradient(135deg, #6366f1, #8b5cf6);
+                color: white;
+                transform: translateX(8px);
+                box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+            }
+
+            .nav-link.active {
+                background: linear-gradient(135deg, #6366f1, #8b5cf6);
+                color: white;
+                box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+            }
+
+            .nav-link i {
+                width: 20px;
+                margin-right: 1rem;
+                font-size: 1.1rem;
+            }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            margin-left: 280px;
+            min-height: 100vh;
+            transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+            .main-content.expanded {
+                margin-left: 0;
+            }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #374151;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            margin-right: 1rem;
+        }
+
+            .menu-toggle:hover {
+                background: rgba(99, 102, 241, 0.1);
+                color: #6366f1;
+            }
+
+        .header-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1f2937;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            -webkit-text-fill-color: transparent;
+         
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 1rem;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 50px;
+            color: #6366f1;
+            font-weight: 500;
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Content Area */
+        .content-area {
+            padding: 2rem;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @@keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        .content-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-height: 400px;
+        }
+
+        /* Mobile Responsive */
+        @@media (max-width: 768px) {
+            .sidebar
+
+        {
+            transform: translateX(-100%);
+        }
+
+        .sidebar.show {
+            transform: translateX(0);
+        }
+
+        .main-content {
+            margin-left: 0;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+
+        .header {
+            padding: 1rem;
+        }
+
+        .header-title {
+            font-size: 1.25rem;
+        }
+
+        .content-area {
+            padding: 1rem;
+        }
+
+        .sidebar-header {
+            padding: 1.5rem 1rem;
+        }
+
+        .nav-link {
+            padding: 0.75rem 1rem;
+        }
+
+        .user-info {
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+        }
+
+        }
+
+        @@media (max-width: 480px) {
+            .user-info span
+
+        {
+            display: none;
+        }
+
+        .header-right {
+            gap: 0.5rem;
+        }
+
+        }
+
+        /* Overlay for mobile */
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+            .sidebar-overlay.show {
+                display: block;
+                opacity: 1;
+            }
+
+        /* Scrollbar Styling */
+        .sidebar::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background: rgba(99, 102, 241, 0.3);
+            border-radius: 2px;
+        }
+
+            .sidebar::-webkit-scrollbar-thumb:hover {
+                background: rgba(99, 102, 241, 0.5);
+            }
+        /* Chart.js canvas */
+        canvas {
+            background-color: #ffffff;
+            border: 1px solid #f48868;
+            border-radius: 8px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar Overlay for Mobile -->
+        <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-crown"></i> Admin Panel</h2>
+                <p>Tourism Management</p>
+            </div>
+
+            <div class="sidebar-nav">
+                <div class="nav-item">
+                    <a asp-controller="Admins" asp-action="Index" class="nav-link active">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a asp-controller="Tourism" asp-action="Index" class="nav-link">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>Tourism</span>
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a asp-controller="Destinations" asp-action="Index" class="nav-link">
+                        <i class="fas fa-globe-americas"></i>
+                        <span>Destination</span>
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a asp-controller="Hotels" asp-action="Index" class="nav-link">
+                        <i class="fas fa-hotel"></i>
+                        <span>Hotel</span>
+                    </a>
+                </div>
+
+
+                <div class="nav-item">
+                    <a asp-controller="Restaurants" asp-action="Index" class="nav-link">
+                        <i class="fas fa-utensils"></i>
+                        <span>Restaurant</span>
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a asp-controller="Admins" asp-action="Contact" class="nav-link">
+                        <i class="fa-solid fa-address-book"></i>
+                        <span>ContactForms</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a asp-controller="Home" asp-action="Index" class="nav-link">
+                        <i class="fas fa-edit"></i>
+                        <span>Check for Changes</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content" id="mainContent">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle" onclick="toggleSidebar()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 class="header-title">@ViewBag.Title</h1>
+                </div>
+
+                <div class="header-right">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span>Admin User</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <div class="content-card">
+                    @RenderBody()
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+            const mainContent = document.getElementById('mainContent');
+
+            if (window.innerWidth <= 768) {
+                sidebar.classList.toggle('show');
+                overlay.classList.toggle('show');
+            } else {
+                sidebar.classList.toggle('collapsed');
+                mainContent.classList.toggle('expanded');
+            }
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+            const mainContent = document.getElementById('mainContent');
+
+            if (window.innerWidth > 768) {
+                sidebar.classList.remove('show');
+                overlay.classList.remove('show');
+                if (sidebar.classList.contains('collapsed')) {
+                    mainContent.classList.add('expanded');
+                } else {
+                    mainContent.classList.remove('expanded');
+                }
+            } else {
+                sidebar.classList.remove('collapsed');
+                mainContent.classList.remove('expanded');
+            }
+        });
+
+        // Active link highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.toLowerCase();
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href && currentPath.includes(href.toLowerCase().split('/').pop())) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth animations
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateX(8px)';
+            });
+
+            link.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('active')) {
+                    this.style.transform = 'translateX(0)';
+                }
+            });
+        });
+
+        // Initialize Charts
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Chart 1: Bar Chart - Number of Listings
+            const ctxListings = document.getElementById('musicChart').getContext('2d');
+            new Chart(ctxListings, {
+                type: 'bar',
+                data: {
+                    labels: ['Hotels', 'Restaurants', 'Resorts', 'Destinations', 'Tourism Spots'],
+                    datasets: [{
+                        label: 'Number of Listings',
+                        data: [12, 20, 10, 15, 18], // Replace with SQL data
+                        backgroundColor: '#17a2b8'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: {
+                            display: true,
+                            text: 'Available Listings Overview',
+                            color: '#ffffff',
+                            font: { size: 18 }
+                        }
+                    }
+                }
+            });
+
+            // Chart 2: Line Chart - Monthly Visitor Count
+            const ctxVisitors = document.getElementById('userGrowthChart').getContext('2d');
+            new Chart(ctxVisitors, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Monthly Visitors',
+                        data: [300, 450, 600, 550, 700, 800], // Replace with SQL counts
+                        borderColor: '#ffc107',
+                        backgroundColor: 'rgba(255, 193, 7, 0.2)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: {
+                            display: true,
+                            text: 'Visitor Growth Over Time',
+                            color: '#ffffff',
+                            font: { size: 18 }
+                        }
+                    }
+                }
+            });
+
+            // Chart 3: Doughnut Chart - Visitors by Country
+            const ctxCountry = document.getElementById('languageChart').getContext('2d');
+            new Chart(ctxCountry, {
+                type: 'doughnut',
+                data: {
+                    labels: ['USA', 'UK', 'India', 'Pakistan', 'Japan', 'Germany'],
+                    datasets: [{
+                        label: 'Visitors by Country',
+                        data: [180, 120, 140, 90, 60, 100], // Replace with SQL counts
+                        backgroundColor: ['#007bff', '#28a745', '#ffc107', '#dc3545', '#6610f2', '#20c997']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: {
+                            display: true,
+                            text: 'Geographic Visitor Distribution',
+                            color: '#ffffff',
+                            font: { size: 18 }
+                        }
+                    }
+                }
+            });
+
+            // Chart 4: Pie Chart - Booking Types
+            const ctxBooking = document.getElementById('bookingChart').getContext('2d');
+            new Chart(ctxBooking, {
+                type: 'pie',
+                data: {
+                    labels: ['Hotels', 'Resorts', 'Restaurants', 'Tours'],
+                    datasets: [{
+                        label: 'Bookings',
+                        data: [300, 150, 100, 200], // Replace with SQL data
+                        backgroundColor: ['#007bff', '#28a745', '#ffc107', '#dc3545']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: {
+                            display: true,
+                            text: 'Booking Type Distribution',
+                            color: '#ffffff',
+                            font: { size: 18 }
+                        }
+                    }
+                }
+            });
+            // Chart 5: Radar Chart - Seasonal Traffic
+            const ctxSeasonal = document.getElementById('seasonalChart').getContext('2d');
+            new Chart(ctxSeasonal, {
+                type: 'radar',
+                data: {
+                    labels: ['Spring', 'Summer', 'Autumn', 'Winter'],
+                    datasets: [{
+                        label: 'Visitors',
+                        data: [120, 300, 180, 90],
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: '#4bc0c0',
+                        pointBackgroundColor: '#4bc0c0'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: {
+                            display: true,
+                            text: 'Seasonal Visitor Trends',
+                            color: '#ffffff',
+                            font: { size: 18 }
+                        }
+                    }
+                }
+            });
+            // Chart 6: Horizontal Bar - Average Stay Duration by City
+            const ctxStay = document.getElementById('stayChart').getContext('2d');
+            new Chart(ctxStay, {
+                type: 'bar',
+                data: {
+                    labels: ['New York', 'Paris', 'Dubai', 'Tokyo', 'Lahore'],
+                    datasets: [{
+                        label: 'Average Stay (Days)',
+                        data: [3.5, 4.2, 5, 2.8, 3.1], // Replace with SQL AVG values
+                        backgroundColor: '#6f42c1'
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: {
+                            display: true,
+                            text: 'Average Stay Duration per City',
+                            color: '#ffffff',
+                            font: { size: 18 }
+                        }
+                    }
+                }
+            });
+
+        });
+
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
