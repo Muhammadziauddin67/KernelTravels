@@ -1,0 +1,399 @@
+﻿@{
+    ViewData["Title"] = "Search";
+}
+@model KarnelTravels.Models.SearchViewModel
+@* header sec  *@
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/assets/images/bg_2.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate pb-5 text-center">
+                <p class="breadcrumbs">
+                    <span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span>
+                    <span>Search <i class="fa fa-chevron-right"></i></span>
+                </p>
+                <h1 class="mb-0 bread">Search</h1>
+            </div>
+        </div>
+    </div>
+</section>
+@* header end  *@
+
+<section class="advanced-search-section py-5" style="background: linear-gradient(135deg, #fceabb, #f8b500);">
+    <div class="container">
+        <div class="search-bar card p-5 shadow border-0 rounded-lg">
+            <form asp-controller="Home" asp-action="Results" method="get" class="row g-3 align-items-end">
+                <!-- Destination fields -->
+                <div class="col-md-3">
+                    <label>Destination Name</label>
+                    <input type="text" class="form-control" name="DestinationName" placeholder="e.g. Paris">
+                </div>
+                <div class="col-md-3">
+                    <label>Destination Location</label>
+                    <input type="text" class="form-control" name="DestinationLocation" placeholder="e.g. France">
+                </div>
+                <div class="col-md-3">
+                    <label>Destination Days</label>
+                    <input type="text" class="form-control" name="DestinationDays" placeholder="e.g. 5">
+                </div>
+                <div class="col-md-3">
+                    <label>Destination Max Price</label>
+                    <input type="number" class="form-control" name="DestinationMaxPrice" placeholder="e.g. 1000">
+                </div>
+
+                <!-- Hotel fields -->
+                <div class="col-md-3">
+                    <label>Hotel Name</label>
+                    <input type="text" class="form-control" name="HotelName" placeholder="e.g. Hilton">
+                </div>
+                <div class="col-md-3">
+                    <label>Hotel Location</label>
+                    <input type="text" class="form-control" name="HotelLocation" placeholder="e.g. New York">
+                </div>
+                <div class="col-md-3">
+                    <label>Hotel Min Rating</label>
+                    <input type="number" step="0.1" min="0" max="5" class="form-control" name="HotelMinRating" placeholder="e.g. 4.5">
+                </div>
+                <div class="col-md-3">
+                    <label>Hotel Max Price</label>
+                    <input type="number" class="form-control" name="HotelMaxPrice" placeholder="e.g. 500">
+                </div>
+
+                <!-- Tourism fields -->
+                <div class="col-md-3">
+                    <label>Tourism Name</label>
+                    <input type="text" class="form-control" name="TourismName" placeholder="e.g. Safari">
+                </div>
+                <div class="col-md-3">
+                    <label>Tourism Location</label>
+                    <input type="text" class="form-control" name="TourismLocation" placeholder="e.g. Kenya">
+                </div>
+                <div class="col-md-3">
+                    <label>Tourism Country</label>
+                    <input type="text" class="form-control" name="TourismCountry" placeholder="e.g. Kenya">
+                </div>
+                <div class="col-md-3">
+                    <label>Tourism Min Rating</label>
+                    <input type="number" min="0" max="5" class="form-control" name="TourismMinRating" placeholder="e.g. 4">
+                </div>
+
+                <!-- Restaurant fields -->
+                <div class="col-md-3">
+                    <label>Restaurant Name</label>
+                    <input type="text" class="form-control" name="RestaurantName" placeholder="e.g. Olive Garden">
+                </div>
+                <div class="col-md-3">
+                    <label>Restaurant Description</label>
+                    <input type="text" class="form-control" name="RestaurantDescription" placeholder="e.g. Italian">
+                </div>
+                <div class="col-md-3">
+                    <label>Restaurant Day</label>
+                    <input type="number" class="form-control" name="RestaurantDay" placeholder="e.g. 1">
+                </div>
+                <div class="col-md-3">
+                    <label>Restaurant Year/Month</label>
+                    <input type="text" class="form-control" name="RestaurantYearMonth" placeholder="e.g. 2025-06">
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                        <i class="fas fa-search mr-2"></i> Search
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section top-rated-packages bg-white py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center heading-section ftco-animate">
+                <span class="subheading">Top Rated</span>
+                <h2 class="mb-4">Traveler’s Favorite Packages</h2>
+                <p>Carefully crafted experiences with exceptional reviews and breathtaking memories.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Package 1 -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4 ftco-animate">
+                <div class="package-card shadow">
+                    <img src="/assets/images/swedan.jpg" class="img-fluid package-img" alt="Swiss Alps">
+                    <div class="package-content p-4">
+                        <h3>Luxury Swiss Alps</h3>
+                        <p class="text-muted">7 Days | Chalet Stay + Glacier Tour</p>
+                        <ul class="package-features list-unstyled">
+                            <li><i class="fas fa-mountain"></i> Scenic Train Ride</li>
+                            <li><i class="fas fa-spa"></i> Private Spa</li>
+                            <li><i class="fas fa-hiking"></i> Guided Alpine Hike</li>
+                        </ul>
+                        <div class="package-price mt-3 d-flex justify-content-between align-items-center">
+                            <span class="h5 text-primary">$2,199</span>
+                            <a href="#" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Package 2 -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4 ftco-animate">
+                <div class="package-card shadow">
+                    <img src="/assets/images/oman.jpg" class="img-fluid package-img" alt="Maldives">
+                    <div class="package-content p-4">
+                        <h3>Maldives Overwater Escape</h3>
+                        <p class="text-muted">5 Nights | Ocean Villas + Snorkeling</p>
+                        <ul class="package-features list-unstyled">
+                            <li><i class="fas fa-umbrella-beach"></i> Overwater Bungalows</li>
+                            <li><i class="fas fa-fish"></i> Coral Reef Snorkeling</li>
+                            <li><i class="fas fa-glass-cheers"></i> Sunset Dinner</li>
+                        </ul>
+                        <div class="package-price mt-3 d-flex justify-content-between align-items-center">
+                            <span class="h5 text-primary">$1,799</span>
+                            <a href="#" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Package 3 -->
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4 ftco-animate">
+                <div class="package-card shadow">
+                    <img src="/assets/images/japan.jpg" class="img-fluid package-img" alt="Japan Cultural Tour">
+                    <div class="package-content p-4">
+                        <h3>Japan Cultural Wonders</h3>
+                        <p class="text-muted">8 Days | Tokyo, Kyoto & Mt. Fuji</p>
+                        <ul class="package-features list-unstyled">
+                            <li><i class="fas fa-landmark"></i> Temple Visits</li>
+                            <li><i class="fas fa-utensils"></i> Sushi Workshop</li>
+                            <li><i class="fas fa-train"></i> Bullet Train Experience</li>
+                        </ul>
+                        <div class="package-price mt-3 d-flex justify-content-between align-items-center">
+                            <span class="h5 text-primary">$2,499</span>
+                            <a href="#" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section services-section">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
+                <div class="w-100">
+                    <span class="subheading">Find Your Destination</span>
+                    <h2 class="mb-4">Search and Explore the World</h2>
+                    <p>Use our search tool to find your next adventure. Whether you're looking for a tropical escape or a cultural experience, we have it all.</p>
+                    <form asp-controller="Search" asp-action="Results" method="get" class="search-destination-form p-3 bg-light rounded">
+                        <div class="form-group">
+                            <label>Destination</label>
+                            <input type="text" name="destination" class="form-control" placeholder="e.g. Bali, Paris, Tokyo">
+                        </div>
+                        <div class="form-group">
+                            <label>Travel Date</label>
+                            <input type="date" name="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary py-3 px-4">Search Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img d-flex w-100 align-items-center justify-content-center" style="background-image:url(/assets/images/search-banner.jpg); min-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center heading-section ftco-animate">
+                <span class="subheading">Popular Categories</span>
+                <h2 class="mb-4">What Are You Looking For?</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- You can copy/paste these cards as needed -->
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                <div class="services services-1 color-1 d-block img" style="background-image: url(/assets/images/services-1.jpg);">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-paragliding"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading mb-3">Adventure Trips</h3>
+                        <p>Thrilling outdoor adventures await you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                <div class="services services-1 color-2 d-block img" style="background-image: url(/assets/images/services-2.jpg);">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading mb-3">City Tours</h3>
+                        <p>Discover urban destinations around the world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                <div class="services services-1 color-3 d-block img" style="background-image: url(/assets/images/services-3.jpg);">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tour-guide"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading mb-3">Guided Tours</h3>
+                        <p>Expert guides to make your journey seamless.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                <div class="services services-1 color-4 d-block img" style="background-image: url(/assets/images/services-4.jpg);">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-map"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading mb-3">Custom Routes</h3>
+                        <p>Create your own adventure with personalized trips.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section testimony-section bg-bottom" style="background-image: url(/assets/images/bg_1.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center pb-4">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                <span class="subheading">Testimonial</span>
+                <h2 class="mb-4">Tourist Feedback</h2>
+            </div>
+        </div>
+        <div class="row ftco-animate">
+            <div class="col-md-12">
+                <div class="carousel-testimony owl-carousel">
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="text">
+                                <p class="star">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img" style="background-image: url(/assets/images/person_1.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Roger Scott</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="text">
+                                <p class="star">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img" style="background-image: url(/assets/images/person_2.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Roger Scott</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="text">
+                                <p class="star">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img" style="background-image: url(/assets/images/person_3.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Roger Scott</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="text">
+                                <p class="star">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img" style="background-image: url(/assets/images/person_1.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Roger Scott</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="text">
+                                <p class="star">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img" style="background-image: url(/assets/images/person_2.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Roger Scott</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+<section class="ftco-intro ftco-section ftco-no-pt">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <div class="img" style="background-image: url(/assets/images/bg_2.jpg);">
+                    <div class="overlay"></div>
+                    <h2>Ready for Your Next Trip?</h2>
+                    <p>Let us help you plan a memorable journey today.</p>
+                    <p class="mb-0"><a asp-controller="Home" asp-action="Contact" class="nav-link" class="btn btn-primary px-4 py-3">Contact Us</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

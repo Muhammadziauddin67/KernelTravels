@@ -1,0 +1,64 @@
+﻿
+
+
+
+
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url(/assets/images/restaurant_1.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate pb-5 text-center">
+                <p class="breadcrumbs">
+                    <span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span>
+                    <span>Restaurants <i class="fa fa-chevron-right"></i></span>
+                </p>
+                <h1 class="mb-0 bread">Top Restaurants</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row d-flex">
+
+            @foreach (var restaurant in Model)
+            {
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="@restaurant.RestaurantLink" class="block-20" style="background-image: url('/assets/images/@restaurant.ImagePath');" target="_blank"></a>
+                        <div class="text">
+                            <div class="d-flex align-items-center mb-4 topp">
+                                <div class="one"><span class="day">@restaurant.Day</span></div>
+                                <div class="two"><span class="yr">@restaurant.yearmonth</span></div>
+                            </div>
+                            <h3 class="heading"><a href="@restaurant.RestaurantLink" target="_blank">@restaurant.Name</a></h3>
+                            <p>@restaurant.Description</p>
+                            <p><a href="@restaurant.RestaurantLink" target="_blank" class="btn btn-primary">View Details</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+
+<section class="ftco-intro ftco-section ftco-no-pt">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <div class="img" style="background-image: url(/assets/images/restaurant_2.jpg);">
+                    <div class="overlay"></div>
+                    <h2>Discover the Taste of the Town</h2>
+                    <p>Explore top-rated restaurants for every mood and meal.</p>
+                    <p class="mb-0"><a asp-controller="Home" asp-action="Restaurant" class="nav-link" class="btn btn-primary px-4 py-3">Reserve a Table</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
